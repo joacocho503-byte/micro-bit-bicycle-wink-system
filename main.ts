@@ -45,21 +45,12 @@ basic.forever(function () {
     if (!(input.isGesture(Gesture.TiltLeft) || input.isGesture(Gesture.TiltRight))) {
         while (!(input.isGesture(Gesture.TiltLeft) || input.isGesture(Gesture.TiltRight))) {
             basic.showLeds(`
-                # # # # #
-                # # # # #
-                # # # # #
-                # # # # #
-                # # # # #
-                `)
-            basic.pause(100)
-            basic.showLeds(`
                 . . . . .
                 . . . . .
                 . . . . .
                 . . . . .
                 . . . . .
                 `)
-            basic.pause(100)
         }
     }
 })
