@@ -42,9 +42,6 @@ input.onGesture(Gesture.TiltLeft, function () {
     }
 })
 basic.forever(function () {
-	
-})
-basic.forever(function () {
     if (!(input.isGesture(Gesture.TiltLeft) || input.isGesture(Gesture.TiltRight))) {
         while (!(input.isGesture(Gesture.TiltLeft) || input.isGesture(Gesture.TiltRight))) {
             basic.showLeds(`
